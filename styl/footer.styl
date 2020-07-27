@@ -1,0 +1,59 @@
+.contact
+  &-title
+    fontly: 30px 400 36px
+    text-align: center;
+    margin: 0 0 30px 0
+  &-wrp
+    display: flex;
+    justify-content: center
+  &-form
+    width: 500px
+    text-align: center
+    & input[type=text],input[type=email],textarea
+      width: 100%
+      display: block
+      margin: 0 0 20px 0
+      padding: 14px 10px
+      border-radius: 4px
+    & input[type="submit"]
+      width: 140px
+      padding: 14px 0
+      border-radius: 4px
+      background-color: $color.White
+      fontly: 16px 700 24px
+      text-transform: uppercase
+      color: $color.GreyDark
+      border: 1px solid $color.White
+      &:hover
+        background-color: $color.GreyLight
+        border-color: $color.GreyLight
+      &:active
+        background-color: $color.Grey
+        border-color: $color.Grey
+
+.social
+  &-list
+    margin: 0 0 0 46px
+    list-style: none
+  &-item
+    display: flex
+    align-items: center
+    margin: 0
+  & > img
+    width: 24px
+    height: 24px
+  & > p
+    margin: 0 0 0 5px;
+
+.footer-copy-wrp
+  opacity: $opacity
+  height: 26px
+  text-align: center
+  background-color: $color.GreyLight
+  display: flex
+  justify-content: center
+  & > p
+    fontly: 14px 400 18px
+    color: $color.Grey
+    margin: 0
+    align-self: center
