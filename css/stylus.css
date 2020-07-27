@@ -1,0 +1,342 @@
+.header-wrp {
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 0;
+}
+.header-cnt > h3 {
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+.header-cnt-list {
+  margin: 50px 0 0 0;
+  list-style-type: none;
+}
+.header-cnt-list-item {
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  position: relative;
+}
+.header-cnt-list-item:before {
+  content: "";
+  width: 25px;
+  height: 19px;
+  display: block;
+  position: absolute;
+  background-image: url("img/check_icon_346.png");
+  background-size: cover;
+  top: 8px;
+  left: -30px;
+}
+.header-img {
+  width: 469px;
+  height: 214px;
+}
+.header-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #445162;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.contact-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.contact-wrp {
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  width: 500px;
+  text-align: center;
+}
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  width: 100%;
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 14px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.contact-form input[type="submit"] {
+  width: 140px;
+  padding: 14px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #445162;
+  border: 1px solid #fff;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #f5f5f5;
+  border-color: #f5f5f5;
+}
+.contact-form input[type="submit"]:active {
+  background-color: #989898;
+  border-color: #989898;
+}
+.social-list {
+  margin: 0 0 0 46px;
+  list-style: none;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.social > img {
+  width: 24px;
+  height: 24px;
+}
+.social > p {
+  margin: 0 0 0 5px;
+}
+.footer-copy-wrp {
+  opacity: 0.96;
+  height: 26px;
+  text-align: center;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+.footer-copy-wrp > p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #989898;
+  margin: 0;
+  align-self: center;
+}
+.main-wrp {
+  width: 100%;
+  min-height: 100px;
+}
+.footer-wrp {
+  min-height: 530px;
+}
+.lane {
+  background-color: #f5f5f5;
+  opacity: 0.96;
+}
+.cnt-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #445162;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.style-text-middle p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333;
+  text-align: justify;
+}
+.about-wrp {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 0 100px;
+}
+.about-wrp > img {
+  width: 430px;
+  height: 245px;
+}
+.about-cnt-text {
+  margin: 0 0 20px 0;
+}
+.plus-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 35px 20px;
+}
+.plus-item {
+  padding: 0 0 0 40px;
+  position: relative;
+}
+.plus-item > p {
+  margin: 0;
+}
+.plus-item:before {
+  content: "+";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #445162;
+  color: White;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.screenshot-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px 15px;
+}
+.screenshot-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0 15px;
+}
+.screenshot-item h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #445162;
+  margin: 0 0 15px 0;
+}
+.screenshot-item p {
+  margin: 0;
+}
+.review-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px 32px;
+}
+.review-item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0 26px;
+}
+.review-item-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  font-style: italic;
+  color: #989898;
+  margin: 0;
+}
+.review-item-text-wrp {
+  background: #ebebeb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  padding: 16px 20px;
+  text-align: justify;
+}
+.review-item-text-wrp:after {
+  content: "";
+  position: absolute;
+  left: -28px;
+  bottom: 100px;
+  border: 15px solid transparent;
+  border-right: 15px solid #ebebeb;
+}
+.review-item-subtext {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #989898;
+  margin: 15px;
+}
+.buy-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0 45px;
+}
+.buy-item {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #445162;
+  align-self: end;
+  background-color: #445162;
+}
+.buy-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  background-color: #445162;
+  text-align: center;
+  margin: 0;
+  padding: 16px;
+}
+.buy-price {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #445162;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0 0 20px 0;
+  background-color: #fff;
+}
+.buy-text {
+  margin: 0;
+  padding: 0 20px;
+  background-color: #445162;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  White-space: pre-line;
+}
+.buy-button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #445162;
+  display: block;
+  margin: 20px;
+  padding: 14px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 2px #989898;
+  -moz-box-shadow: 0 2px #989898;
+  box-shadow: 0 2px #989898;
+}
+.buy-button:hover {
+  background-color: #f5f5f5;
+}
+.buy-button:active {
+  background-color: #989898;
+}
+body {
+  font-family: arial;
+  background: url("../img/photo-of-snow-field-near-trees-1978126.jpg");
+}
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+.bg-dark {
+  opacity: 0.96;
+  background-color: #445162;
+  color: #fff;
+}
+.bg-white {
+  opacity: 0.96;
+  background-color: #fff;
+}
+.padding-side {
+  padding: 50px;
+}
