@@ -1,0 +1,333 @@
+font-type = arial
+width = 1280px
+
+color1 = #333333
+color2 = #445161
+color3 = #445162
+color4 = #f5f5f5
+color5 = #989898
+color-white = #ffffff
+
+color = {
+  "light-black": #333333,
+  "dark-grey": #445162,
+  "grey": #989898,
+  "light-grey": #f5f5f5,
+  "white": #ffffff
+}
+
+grid()
+  display: grid
+
+grid-col()
+  grid()
+  grid-template-columns: arguments
+
+
+  vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args
+
+  border-radius()
+    vendor('border-radius', arguments)
+
+  box-shadow()
+    vendor('box-shadow', arguments)
+
+body
+  font-family: font-type
+  background: url(../img/photo-of-snow-field-near-trees-1978126.jpg)
+
+.container {
+  margin: 0 auto;
+  width: width
+}
+
+.bg-dark
+    opacity: 0.95
+    background-color: color.dark-grey
+    color: color.white
+
+.bg-white
+  opacity: 0.95
+  background-color: color.white
+
+.padding-side
+  padding: 50px
+
+
+.header
+  &-wrp
+    min-height: 300px
+    grid-col 1fr 1fr
+
+  &-cnt
+    & > h3
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+      font-size: 60px
+      font-weight: 400
+      line-height: 1.2
+      margin: 0
+    &-list
+      margin: 50px 0 0 0
+      list-style-type: none
+      &-item
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3)
+        font-size: 20px
+        font-weight: 400
+        line-height: 36px
+        position: relative
+        &:before
+            content: ""
+            width: 25px
+            height: 19px
+            display: block
+            position: absolute
+            background-image: url(img/check_icon_346.png)
+            background-size: cover
+            top: 8px
+            left: -30px
+  &-img
+    width: 469px
+    height: 214px
+  &-title
+      font-size: 30px
+      line-height: 36px
+      font-weight: 400
+      color: color.dark-grey
+      text-align: center
+      margin: 0 0 30px 0
+
+.main
+  &-wrp
+    width 100%
+    min-height: 100px
+
+.footer
+  &-wrp
+    min-height: 530px
+
+.lane
+  background-color: color.light-grey
+  opacity: 0.95
+
+.cnt-title
+    font-size: 30px
+    line-height: 36px
+    font-weight: 400
+    color: #445161
+    text-align: center
+    margin: 0 0 30px 0
+
+.style-text-middle p
+  font-size: 16px
+  line-height: 24px
+  font-weight: 400
+  color: color.light-black
+  text-align: justify;
+
+.about
+  &-wrp
+    grid-col 2fr 1fr
+    grid-column-gap: 100px
+    & > img
+      width: 430px
+      height: 245px
+  &-cnt-text
+    margin: 0 0 20px 0
+
+.plus
+  &-list
+    grid-col: 1fr 1fr
+    grid-row-gap: 35px
+    grid-column-gap: 20px
+  &-item
+    padding: 0 0 0 40px
+    position: relative
+    & > p
+      margin: 0
+    &:before
+      content: "+"
+      display: block
+      width: 32px
+      height: 32px
+      background-color: color.dark-grey
+      color: white
+      font-size: 28px
+      text-align: center
+      line-height: 32px
+      position: absolute
+      top: 0
+      left: 0
+
+.screenshot
+  &-list
+    grid-col: 1fr 1fr
+    grid-gap: 30px 15px
+  &-item
+    grid-col: auto auto
+    grid-gap: 15px
+    & h5
+      font-size:24px
+      line-height: 30px
+      font-weight: 400;
+      color: color.dark-grey
+      margin: 0 0 15px 0
+    & p
+      margin 0
+
+.review
+  &-list
+    grid-col: 1fr 1fr
+    grid-gap: 32px 32px
+  &-item
+    grid-col: auto auto
+    grid-column-gap: 26px
+    &-text
+      font-size: 14px
+      line-height: 18px
+      font-weight: 400
+      font-style: italic
+      color: color.grey
+      margin: 0
+      &-wrp
+        background: #ebebeb
+        border-radius: 5px
+        position: relative
+        padding: 16px 20px
+        text-align: justify
+        &:after
+          content: ""
+          position: absolute
+          left: -28px
+          bottom: 85px
+          border: 15px solid transparent
+          border-right: 15px solid #ebebeb
+    &-subtext
+      font-size: 14px
+      line-height: 18px
+      font-weight: 400
+      color: color.grey
+      margin 15px
+
+.buy
+  &-list
+    grid-col: 1fr 1fr 1fr
+    grid-column-gap: 45px
+  &-item
+    border-radius: 4px
+    border: 2px solid color.dark-grey
+    align-self: end
+    background-color: color.dark-grey
+  &-title
+    font-size: 24px
+    line-height: 30px
+    font-weight: 400
+    color: color.white
+    background-color: color.dark-grey
+    text-align: center
+    margin: 0
+    padding: 16px
+  &-price
+    font-size: 40px
+    line-height: 30px
+    font-weight: 400
+    color: color.dark-grey
+    text-align: center;
+    padding: 18px 0;
+    margin: 0 0 20px 0;
+    background-color: color.white
+  &-text
+    margin: 0
+    padding: 0 20px
+    background-color: color.dark-grey
+    font-size: 16px
+    line-height: 24px
+    font-weight 400
+    color: color.white
+    white-space: pre-line
+  &-button
+    font-size: 18px
+    line-height: 18px
+    font-weight: 700
+    color: color.dark-grey
+    display: block
+    margin: 20px
+    padding: 14px 0
+    border-radius: 4px
+    background-color: color.white
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px color.grey
+    &:hover
+      background-color: #f5f5f5
+    &:active
+      background-color: color.grey
+
+.contact
+  &-title
+    font-size: 30px
+    line-height: 36px
+    font-weight: 400
+    text-align: center;
+    margin: 0 0 30px 0
+  &-wrp
+    display: flex;
+    justify-content: center
+  &-form
+    width: 500px
+    text-align: center
+    & input[type=text],input[type=email],textarea
+      width: 100%
+      display: block
+      margin: 0 0 20px 0
+      padding: 14px 10px
+      border-radius: 4px
+    & input[type="submit"]
+      width: 140px
+      padding: 14px 0
+      border-radius: 4px
+      background-color: color.white
+      font-size: 16px
+      line-height: 24px
+      font-weight: 700
+      text-transform: uppercase
+      color: color.dark-grey
+      border: 1px solid color.white
+      &:hover
+        background-color: #f5f5f5
+        border-color: #f5f5f5
+      &:active
+        background-color: color.grey
+        border-color: color.grey
+
+.social
+  &-list
+    margin: 0 0 0 46px
+    list-style: none
+  &-item
+    display: flex
+    align-items: center
+    margin: 0 0 18px 0
+  & > img
+    width: 24px
+    height: 24px
+  & > p
+    margin: 0 0 0 5px;
+
+.footer-copy-wrp
+  opacity: 0.95
+  height: 26px
+  text-align: center
+  background-color: #f5f5f5
+  display: flex
+  justify-content: center
+  & > p
+    font-size: 14px
+    line-height: 18px
+    font-weight: 400
+    color: color.grey
+    margin: 0
+    align-self: center
