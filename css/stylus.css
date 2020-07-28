@@ -237,7 +237,7 @@
   content: "";
   position: absolute;
   left: -28px;
-  bottom: 100px;
+  bottom: 85px;
   border: 15px solid transparent;
   border-right: 15px solid #ebebeb;
 }
@@ -319,6 +319,8 @@
 body {
   font-family: arial;
   background: url("../img/photo-of-snow-field-near-trees-1978126.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .container {
   margin: 0 auto;
