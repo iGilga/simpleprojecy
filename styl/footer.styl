@@ -1,0 +1,99 @@
+.contact
+  &-title
+    fontly: 30px 400 36px
+    text-align: center;
+    margin: 0 0 30px 0
+  &-wrp
+    display: flex;
+    justify-content: center
+  &-form
+    min-width: 500px
+    text-align: center
+    & input[type=text],input[type=email],textarea
+      width: 100%
+      display: block
+      margin: 0 0 20px 0
+      padding: 14px 10px
+      border-radius: 4px
+      box-sizing: border-box
+    & input[type="submit"]
+      width: 140px
+      padding: 14px 0
+      border-radius: 4px
+      background-color: $color.White
+      fontly: 16px 700 24px
+      text-transform: uppercase
+      color: $color.GreyDark
+      border: 1px solid $color.White
+      &:hover
+        background-color: $color.GreyLight
+        border-color: $color.GreyLight
+      &:active
+        background-color: $color.Grey
+        border-color: $color.Grey
+
+.social
+  &-wrp
+    margin: 0 0 0 60px
+  &-link
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 30px;
+    position: relative;
+    font-size: 16px;
+    font-family: "arial";
+    line-height: 1.5;
+    text-align: left;
+    &::before
+      content: ""
+      display: block
+      width: 24px
+      height: 24px
+      background-position: center
+      background-repeat: no-repeat
+      background-size: cover
+      position: absolute
+      top: 1px
+      left: 0
+    &:nth-of-type(1):before
+      background-image: url(../img/skype_icon_319.png)
+    &:nth-of-type(2):before
+      background-image: url(../img/icq_icon_324.png)
+    &:nth-of-type(3):before
+      background-image: url(../img/email_icon_332.png)
+    &:nth-of-type(4):before
+      background-image: url(../img/phone_icon_337.png)
+  &-list
+    display: flex
+    justify-content: space-between
+    min-width: 240px
+  &-item
+    display: flex
+    height: 42px
+    width: 42px
+    border-radius: 50%
+    background-color: $color.White
+    text-align: center
+    color: $color.GreyDark
+    text-decoration: none;
+    &:hover
+      background-color: $color.GreyLight
+    &:active
+      background-color: $color.Grey
+
+.fab
+  display: block
+  margin: auto
+
+.footer-copy-wrp
+  opacity: $opacity
+  height: 26px
+  text-align: center
+  background-color: $color.GreyLight
+  display: flex
+  justify-content: center
+  & > p
+    fontly: 14px 400 18px
+    color: $color.Grey
+    margin: 0
+    align-self: center

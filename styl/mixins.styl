@@ -1,0 +1,23 @@
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+border-radius()
+  vendor('border-radius', arguments)
+
+box-shadow()
+  vendor('box-shadow', arguments)
+
+grid()
+  display: grid
+
+grid-col(xgap, ygap, columns...)
+  grid()
+  grid-template-columns: columns
+  grid-gap: xgap ygap
+
+fontly(size, weight, height)
+  font-size: size
+  font-weight: weight
+  line-height: height

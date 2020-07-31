@@ -1,0 +1,141 @@
+.cnt-title
+  fontly: 30px 400 36px
+  color: $color.GreyDark
+  text-align: center
+  margin: 0 0 30px 0
+
+.main
+  &-wrp
+    width 100%
+    min-height: 100px
+
+.footer
+  &-wrp
+    min-height: 530px
+
+.about
+  &-wrp
+    grid-col 0 100px 2fr 1fr
+    & > img
+      display: block;
+      width: 430px
+      height: 245px
+  &-cnt
+    &-title
+      fontly: 30px 400 36px
+      color: $color.GreyDark
+      margin: 0 0 30px 0
+      text-align: left;
+    &-text
+      margin: 0 0 20px 0
+      &:last-child
+        margin: 0
+.plus
+  &-list
+    grid-col: 35px 20px 1fr 1fr
+    list-style: none
+    margin: 0
+  &-item
+    padding: 0 0 0 40px
+    position: relative
+    & > p
+      margin: 0
+    &:before
+      content: "+"
+      display: block
+      width: 32px
+      height: 32px
+      background-color: $color.GreyDark
+      color: White
+      fontly: 28px 400 32px
+      text-align: center
+      position: absolute
+      top: 0
+      left: 0
+
+.screenshot
+  &-list
+    grid-col: 30px 15px 1fr 1fr
+  &-item
+    grid-col: 0 15px auto auto
+    & h5
+      fontly: 24px 400 30px
+      color: $color.GreyDark
+      margin: 0 0 15px 0
+    & p
+      margin 0
+
+.review
+  &-list
+    grid-col: 32px 32px 1fr 1fr
+  &-item
+    grid-col: 0 20px auto auto
+    margin: 0;
+    &-text
+      fontly: 14px 400 18px
+      font-style: italic
+      color: $color.Grey
+      margin: 0
+      &-wrp
+        background: $color.ColorReview
+        border-radius: 5px
+        position: relative
+        padding: 16px 20px
+        text-align: justify
+        &:after
+          content: ""
+          position: absolute
+          left: -28px
+          bottom: 85px
+          border: 15px solid transparent
+          border-right: 15px solid $color.ColorReview
+    &-subtext
+      display: block;
+      fontly: 14px 400 18px
+      color: $color.Grey
+      margin 15px 0 0 0
+
+.buy
+  &-list
+    grid-col: 0 45px 1fr 1fr 1fr
+  &-item
+    border-radius: 4px
+    border: 2px solid $color.GreyDark
+    align-self: end
+    background-color: $color.GreyDark
+  &-title
+    fontly: 24px 400 30px
+    color: $color.White
+    background-color: $color.GreyDark
+    text-align: center
+    margin: 0
+    padding: 16px
+  &-price
+    display: block;
+    fontly: 40px 400 30px
+    color: $color.GreyDark
+    text-align: center;
+    padding: 18px 0;
+    margin: 0 0 20px 0;
+    background-color: $color.White
+  &-text > li
+    background-color: $color.GreyDark
+    fontly: 16px 400 24px
+    color: $color.White
+    White-space: pre-line
+  &-button
+    fontly: 18px 700 18px
+    color: $color.GreyDark
+    display: block
+    margin: 20px
+    padding: 14px 0
+    border-radius: 4px
+    background-color: $color.White
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 2px $color.Grey
+    &:hover
+      background-color: $color.GreyLight
+    &:active
+      background-color: $color.Grey
